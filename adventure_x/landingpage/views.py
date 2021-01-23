@@ -2,4 +2,7 @@ from django.http.response import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("At landingpage index")
+    return render('index.html')
+
+def startgame(request):
+    return HttpResponse("You have started the game")
