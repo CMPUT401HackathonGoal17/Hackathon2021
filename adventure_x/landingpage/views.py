@@ -5,9 +5,6 @@ from .forms import UserForm
 def index(request):
     if request.method == "POST":
         form = UserForm(request.POST or None)
-        print(form)
-        print(form.is_valid())
-        print(form.errors)
         if form.is_valid():
             form.save()
         return redirect('startgame')
@@ -17,9 +14,10 @@ def index(request):
 
 def startgame(request):
     users = User.objects.order_by('id')
-    print(users)
     if users.count() >= 1:
         user = users.last() # get the latest user
-        return render(request, 'startgame.html', {"user":user.name})
+        return redirect('/goal1/q1')
     else:
+        if request.method == "POST":
+            return redirect('/goal1/q1')
         return render(request, 'startgame.html', {"user":"Guest"})
