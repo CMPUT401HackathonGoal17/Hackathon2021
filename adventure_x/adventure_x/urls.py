@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from ending import views
 from goal4 import views
+from goal7 import views
 
 
 urlpatterns = [
@@ -27,5 +28,5 @@ urlpatterns = [
 
     path('ending/', include('ending.urls')),
     path('goal4/', include('goal4.urls')),
-
+    path('goal7/', include('goal7.urls')),
 ]

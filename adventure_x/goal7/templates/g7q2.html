@@ -1,0 +1,47 @@
+{%extends 'baseg7.html'%}
+{%block title%}Adventure X | Affordable and Clean Energy{%endblock%}
+{%block content%}
+<h1>Affordable and Clean Energy</h1>
+
+<!-- Question 1 -->
+<p>The school is very bright, with walls free from posters and lights to liven 
+    up the atmosphere. However, you think this may not be such a good idea. 
+    There are empty rooms not being used and could help save energy. 
+</p>
+<h3>You think about how to bring this up to the principal.</h3>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q2o1">
+    <label class="form-check-label" for="q2o1">
+        a. Suggest to put posters around the school, reminding people to turn off the lights when they leave classrooms.  
+        <!-- (Neutral) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q2o2">
+    <label class="form-check-label" for="q2o2">
+        b. Ask the principal to call for an assembly the next day, and you can host a session about saving energy. 
+        <!--  (Karma +, comrades +) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q2o3">
+    <label class="form-check-label" for="q2o3">
+        c. Request to get time to teach each class individually, providing fun and interactive ways about saving energy. (Human numbers check)
+        <!-- (Karma +) -->
+    </label>
+    </input>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q2o4">
+    <label class="form-check-label" for="q2o4">
+        c. Turning off the lights will make the school seem gloomy, the school needs to look beautiful and positive. 
+        <!-- (Karma -) -->
+    </label>
+    </input>
+</div>
+<br/>
+<a href="{% url 'g7q3'%}">
+    <button type="button" class="btn btn-primary">Continue</button>
+</a>
+
+{%endblock%}

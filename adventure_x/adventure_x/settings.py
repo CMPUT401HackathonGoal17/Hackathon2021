@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 
     'goal_13',
     'goal4',
-
+    'goal7',
 ]
 
 MIDDLEWARE = [
