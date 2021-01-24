@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'goal1',
     'landingpage.apps.LandingpageConfig',
+    'goal11',
 ]
 
 MIDDLEWARE = [
