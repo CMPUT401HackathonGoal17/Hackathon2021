@@ -16,8 +16,8 @@ def startgame(request):
     users = User.objects.order_by('id')
     if users.count() >= 1:
         user = users.last() # get the latest user
-        return redirect('/goal1/q1')
+        return redirect('/goal1/g1q1')
     else:
         if request.method == "POST":
-            return redirect('/goal1/q1')
+            return redirect('/goal1/g1q1')
         return render(request, 'startgame.html', {"user":"Guest"})
