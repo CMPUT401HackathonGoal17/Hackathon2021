@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landingpage.apps.LandingpageConfig',
+    'goal_13',
 ]
 
 MIDDLEWARE = [
