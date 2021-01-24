@@ -1,12 +1,17 @@
 from django.http.response import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from landingpage.models import User
+from .models import UserGoal1
 
 def q1(request):
-    
-    return render(request, 'q1.html', {})
+    # users = UserGoal1.objects.order_by('id')
+    # print(users)
+    return render(request, 'g1q1.html', {})
 
 def q2(request):
-    return render(request, 'q2.html', {})
+    return render(request, 'g1q2.html', {})
 
 def q3(request):
-    return render(request, 'q3.html', {})
+    if request.method=="POST":
+        return redirect('/goal4/q1')
+    return render(request, 'g1q3.html', {})

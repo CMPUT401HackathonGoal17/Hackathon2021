@@ -1,0 +1,49 @@
+{%extends 'baseg7.html'%}
+{%block title%}Adventure X | Affordable and Clean Energy{%endblock%}
+{%block content%}
+<h1>Affordable and Clean Energy</h1>
+<h2>Bus arrives at a school in the town of Townscity.</h2>
+<br/>
+
+<!-- Question 1 -->
+<p>The principal is excited to have such a knowledgeable person like you visit the school and plans 
+    to take you and your crew on a tour of the school. As your group heads out, he leaves the light 
+    on and closes the door. You imagine you won’t be back for a while though, as the school is large.
+</p>
+
+<h3>What do you do?</h3>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o1">
+    <label class="form-check-label" for="q1o1">
+        a. Go back and turn off the lights. 
+        <!-- (Karma +) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o2">
+    <label class="form-check-label" for="q1o2">
+        b. Berate him in front of everyone, saying he is wasting energy.
+        <!--  (Comrades -) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o3">
+    <label class="form-check-label" for="q1o3">
+        c. Cough quietly, hinting to him the light is on.
+        <!-- (Karma =) -->
+    </label>
+    </input>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o4">
+    <label class="form-check-label" for="q1o4">
+        c. Leave it, he is the one paying for the bills, not you.
+        <!-- (Karma -) -->
+    </label>
+    </input>
+</div>
+<br/>
+<a href="{% url 'g7q2'%}">
+    <button type="button" class="btn btn-primary">Continue</button>
+</a>
+{%endblock%}

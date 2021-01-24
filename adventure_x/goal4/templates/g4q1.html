@@ -1,0 +1,46 @@
+{%extends 'baseg4.html'%}
+{%block title%}Adventure X | Quality Education{%endblock%}
+{%block content%}
+<h1>Quality Education</h1>
+<h2>Bus arrives at a location with bunch of children playing or hanging around</h2>
+<br/>
+
+<!-- Question 1 -->
+<p>You inquire into why there are so many children out and about in the middle of the day</p>
+<p>You find out that they cannot afford to go to school, and wonder if you should do something about it.</p>
+<h3>What do you do?</h3>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o1">
+    <label class="form-check-label" for="q1o1">
+        a. Donate a few math and reading books so they can practice
+        <!-- (Karma +, Comrades +) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o2">
+    <label class="form-check-label" for="q1o2">
+        b. Help set up a classroom which will take some time 
+        <!--  (Karma +, Comrades - [requires people]) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o3">
+    <label class="form-check-label" for="q1o3">
+        c. Hold a lecture for them right now
+        <!-- (Karma +, Comrades =) -->
+    </label>
+    </input>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q1o4">
+    <label class="form-check-label" for="q1o4">
+        d. Tell them to stay hopeful and that things will get better.
+        <!-- (Karma =/-, Comrades =) -->
+    </label>
+    </input>
+</div>
+<br/>
+<a href="{% url 'q2'%}">
+    <button type="button" class="btn btn-primary">Continue</button>
+</a>
+{%endblock%}
