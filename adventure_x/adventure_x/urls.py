@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from ending import views
+from goal4 import views
 
 
 urlpatterns = [
@@ -22,5 +24,8 @@ urlpatterns = [
     path('', include('landingpage.urls')),
     path('goal1/', include('goal1.urls')),
     path('goal13/',include('goal_13.urls')),
+
+    path('ending/', include('ending.urls')),
+    path('goal4/', include('goal4.urls')),
 
 ]
