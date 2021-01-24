@@ -3,10 +3,10 @@ from django.template import loader
 from django.shortcuts import render
 
 #advenure_x/ending/template/ending.html
-def index(request):
+def end(request):
     context = {}
     
-    return render(request, 'index.html', context)
+    return render(request, 'end.html', context)
 
 def ending(request):
 
