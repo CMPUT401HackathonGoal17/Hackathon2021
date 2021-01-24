@@ -23,6 +23,7 @@ from goal7 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('landingpage.urls')),
+    path('goal11/', include('goal11.urls')),
     path('goal1/', include('goal1.urls')),
     path('goal13/',include('goal_13.urls')),
 

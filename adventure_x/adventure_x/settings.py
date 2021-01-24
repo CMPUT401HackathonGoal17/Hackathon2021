@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'goal1',
     'landingpage.apps.LandingpageConfig',
-
+    'goal11',
     'goal_13',
     'goal4',
     'goal7',

@@ -1,0 +1,36 @@
+{% extends 'baseg11.html' %}
+{%block title%}Adventure X | Make cities and human settlements inclusive, safe, resilient, and sustainable{%endblock%}
+{%block content%}
+<h1>Make cities and human settlements inclusive, safe, resilient, and sustainable</h1>
+
+<!-- Question 1 -->
+<p>Around the park you notice that there is flood damage, a natural disaster must have recently occurred!</p>
+<h3>How do you get involved?</h3>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q2o1">
+    <label class="form-check-label" for="q2o1">
+        a. Work with locals to implement policies to improve resilience to disasters.
+        <!-- (Comrades +) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q2o2">
+    <label class="form-check-label" for="q2o2">
+        b. Grab a shovel and gloves and help to clean up.
+        <!--  (Karma +) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q2o3">
+    <label class="form-check-label" for="q2o3">
+        c. Ignore the problem
+        <!--  (Neutral) -->
+    </label>
+    </input>
+</div>
+<br/>
+<a href="{% url 'q3'%}">
+    <button type="button" class="btn btn-primary">Continue</button>
+</a>
+
+{%endblock%}
