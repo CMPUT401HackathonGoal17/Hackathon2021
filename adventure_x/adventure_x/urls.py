@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from goal4 import views
+from goal7 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('landingpage.urls')),
     path('goal1/', include('goal1.urls')),
     path('goal4/', include('goal4.urls')),
+    path('goal7/', include('goal7.urls')),
 ]
