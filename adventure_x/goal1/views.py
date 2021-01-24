@@ -1,9 +1,9 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 
-def index(request):
+def q1(request):
     
-    return render(request, 'index.html', {})
+    return render(request, 'q1.html', {})
 
 def q2(request):
     return render(request, 'q2.html', {})
