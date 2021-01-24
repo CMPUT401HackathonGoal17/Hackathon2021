@@ -4,10 +4,11 @@
 <center><h1>Hey this is the landing page, thanks for coming!</h1></center>
 <br>
 
-<form class="row g-3">
+<form class="row g-3" method="POST">
+    {% csrf_token %}
     <center>
         <div class="col-md-2">
-            <input type="Name" class="form-control" id="InputName1">
+            <input type="Name" class="form-control" id="InputName1" name='name'>
         </div>
     </center>
     <center>
