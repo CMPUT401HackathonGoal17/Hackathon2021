@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%block title%}Adventure X | Poverty{%endblock%}
+{%block content%}
+<h1>Poverty</h1>
+
+<!-- Question 1 -->
+<h3>How do you want to help these people?</h3>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q3o1">
+    <label class="form-check-label" for="q3o1">
+        a. Work together with the dwellers to build a group living home on a plot of government land that has been set aside for a construction project.
+        <!-- Karma ++, Comrades ++ (Some of the homeless ppl will join their quest) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q3o2">
+    <label class="form-check-label" for="q3o2">
+        b. Purchase groceries for the camp with some of the group fund money.
+        <!--  Karma ++, Comrades == (The lives of the empoverished people are bettered) -->
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadio" id="q3o3">
+    <label class="form-check-label" for="q3o3">
+        c. They can help themselves/they seem to be doing fine, let's move on.
+        <!-- Karma ==, Comrades == ( a]Someone dies because of lack of interaction? b]The tent city livers continue living their lives) -->
+    </label>
+    </input>
+</div>
+<br/>
+<!-- <a href="{% url 'q3'%}"> -->
+    <button type="button" class="btn btn-primary">Continue</button>
+<!-- </a> -->
+
+{%endblock%}
